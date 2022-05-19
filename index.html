@@ -13,36 +13,36 @@
     />
 
     <!-- stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Nology Conference</title>
   </head>
 
   <body>
     <main>
       <!-- welcome/ title -->
-      <section>
-        <h1>Welcome to Nology Conference!</h1>
-        <p>Amazing talks from amazing people.</p>
+      <section class="welcome">
+        <h1 id="welcome__heading" class="welcome__heading">Welcome to Nology Conference!</h1>
+        <p class="welcome__content">Amazing talks from amazing people.</p>
       </section>
 
       <!-- register your interest -->
       <section>
         <h2>Register your interest!</h2>
-        <form>
+        <form id="form">
           <div>
-            <label>Name</label>
-            <input />
+            <label for="name">Name</label>
+            <input id="name" class="form-input" type="text" />
           </div>
           <div>
-            <label>Email</label>
-            <input />
+            <label for="email">Email</label>
+            <input id="email" class="form-input" type="email" />
           </div>
-          <button>Send</button>
+          <button id="submit-button">Send</button>
         </form>
       </section>
     </main>
 
     <!-- external script -->
-    <script src="./script.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
